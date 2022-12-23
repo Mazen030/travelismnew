@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tryui2.HelloController">
+   <children>
+      <Pane layoutX="170.0" prefHeight="138.0" prefWidth="619.0" style="-fx-background-color: #7156DC;" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="-0.20000000000004547">
+         <children>
+            <Label layoutX="36.0" layoutY="39.0" prefHeight="60.0" prefWidth="186.0" text="Hotels">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="199.0" fitWidth="192.0" layoutX="291.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\Mazen Mohamed\IdeaProjects\Tryui2\src\main\java\com\example\tryui2\executive suite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="566.0" prefWidth="172.0" style="-fx-background-color: #3F2B63;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="41.0" layoutY="39.0" prefHeight="42.0" prefWidth="107.0" text="Travellism">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="Homepage" layoutX="39.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#gohome" prefHeight="31.0" prefWidth="100.0" text="Home page" />
+            <TextField fx:id="countryinhotel" layoutX="15.0" layoutY="174.0" />
+            <Text fill="#fafafa" layoutX="19.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="country:" />
+            <TextField fx:id="categoryhotel" layoutX="15.0" layoutY="236.0" />
+            <Text fill="#fafafa" layoutX="16.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="category:" />
+            <Button fx:id="confirmbooking" layoutX="39.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#confirmbookingh" text="confirm booking" />
+            <Button fx:id="addreq" layoutX="26.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#showreq" text="Add requirements" />
+            <Button fx:id="print" layoutX="62.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#printarraylist" text="print" />
+         </children>
+      </Pane>
+      <HBox layoutX="170.0" layoutY="138.0" prefHeight="48.0" prefWidth="619.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="112.0" text="Rooms" />
+            <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="130.0" text="Number of persons" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Price" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Help" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="complain" />
+         </children>
+      </HBox>
+      <Label fx:id="outputhotel" layoutX="259.0" layoutY="211.0" prefHeight="300.0" prefWidth="410.0" text="mahsjsdssdl" />
+   </children>
+</AnchorPane>
