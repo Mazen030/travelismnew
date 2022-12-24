@@ -43,5 +43,6 @@
       <Label layoutX="159.0" layoutY="192.0" text="username:" />
       <Label layoutX="161.0" layoutY="253.0" text="password:" />
       <Button fx:id="login" layoutX="274.0" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#gonext0" text="Login" />
+      <Label fx:id="loginmessage" layoutX="197.0" layoutY="334.0" prefHeight="18.0" prefWidth="187.0" />
    </children>
 </AnchorPane>

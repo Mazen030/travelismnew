@@ -62,6 +62,17 @@ private Button Homepage;
     @FXML
     private Label outputflight;
     @FXML
+    private Button confirmpayment;
+    @FXML
+    private Label messagesuccesful;
+    @FXML
+    private Label totalprice;
+    @FXML
+    private Label cart;
+    @FXML
+    private Label loginmessage;
+    
+    @FXML
     void gonext0(MouseEvent event) throws Exception {
         Stage stage=(Stage) login.getScene().getWindow();
         if(username.getText().toString().equals("mazen") && password.getText().toString().equals("123") ){
@@ -205,7 +216,10 @@ void gohome3(MouseEvent event)throws Exception {
 
     }
     @FXML
-    public void showCart(MouseEvent){
+    public void showCart(MouseEvent event){
+       // String psh=Program.
+
+
 
     }
 

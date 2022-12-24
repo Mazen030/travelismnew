@@ -26,8 +26,10 @@
                </font>
             </Text>
          </children></Pane>
-      <Label layoutX="197.0" layoutY="138.0" prefHeight="498.0" prefWidth="894.0" />
-      <Button layoutX="962.0" layoutY="646.0" mnemonicParsing="false" text="confirm payment" />
+      <Label fx:id="cart" layoutX="197.0" layoutY="138.0" prefHeight="498.0" prefWidth="894.0" />
+      <Button fx:id="confirmpayment" layoutX="928.0" layoutY="636.0" mnemonicParsing="false" onMouseClicked="#showCart" text="confirm payment" />
+      <Label fx:id="messagesuccesful" layoutX="939.0" layoutY="662.0" prefHeight="18.0" prefWidth="94.0" />
+      <Label fx:id="totalprice" layoutX="506.0" layoutY="633.0" prefHeight="38.0" prefWidth="274.0" />
 
 
    </children>
