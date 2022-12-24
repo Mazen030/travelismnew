@@ -19,6 +19,7 @@ public class Tourist extends Person {
           }
        }
     }*/
+
     public void setComplaint(String complaint) {
         this.complaint = complaint;
     }

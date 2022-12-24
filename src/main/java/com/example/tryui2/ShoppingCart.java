@@ -10,6 +10,19 @@ class ShoppingCart {
         items.add(booking);
         Total_price+=booking.price;
     }
+    String showItems(){
+        String s="";
+       for(int i=0;i< items.size();i++){
+//            if(items.get(i) instanceof Flight){
+//                s+=((Flight)items.get(i)).toString();
+//            }else{
+//                s+=((Hotel)items.get(i)).toString();
+//            }
+
+            s+=items.get(i).toString();
+        }
+        return s;
+    }
     void deleteitem(Booking booking){
         for(int i = 0; i<items.size();i++){
             if(booking.equals(items.get(i))){

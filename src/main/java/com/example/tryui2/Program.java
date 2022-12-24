@@ -12,7 +12,9 @@ public final class Program {
     public static ArrayList<Flight> getFlights() {
         return Flights;
     }
-
+//    public static ArrayList<Tourist> getTourists() {
+//        return tourists;
+//    }
     public static ArrayList<Hotel> getHotels() {
         return Hotels;
     }
@@ -28,7 +30,7 @@ public final class Program {
         return employees;
     }
 
-    public ArrayList<Tourist> getTourists() {
+    public static ArrayList<Tourist> getTourists() {
         return tourists;
     }
 

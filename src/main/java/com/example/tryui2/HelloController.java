@@ -18,9 +18,9 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 
 public class HelloController {
+    private String user;
     @FXML
     private Button hotel;
-    //private static ArrayList<Hotel> Hotels=new ArrayList<Hotel>();
 @FXML
 private Button flight;
 @FXML
@@ -74,13 +74,22 @@ private Button Homepage;
     
     @FXML
     void gonext0(MouseEvent event) throws Exception {
-        Stage stage=(Stage) login.getScene().getWindow();
-        if(username.getText().toString().equals("mazen") && password.getText().toString().equals("123") ){
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
 
-        stage.setScene(new Scene(root));
-        stage.show();
-    }}
+        String tmpU=username.getText();
+        String tmpP=password.getText();
+        for(int i=0;i<Program.getTourists().size();i++){
+            if((Program.getTourists().get(i).getUsername().equals(tmpU))&&(Program.getTourists().get(i).getPassword().equals(tmpU))){
+                user=tmpU;
+                Stage stage=(Stage) login.getScene().getWindow();
+                Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+                stage.setScene(new Scene(root));
+                stage.show();
+            }
+        }
+        loginmessage.setText("Wrong Password or User does not exist");
+        //TODO: create a label to show wrong password or not existing user
+
+    }
 
     @FXML
     void gonext(MouseEvent event) throws Exception {
@@ -187,16 +196,10 @@ void gohome3(MouseEvent event)throws Exception {
 
          if(c.equals(Program.getHotels().get(i).getCity())){
              p+=Program.getHotels().get(i).toString()+"\n";
-
          }
-
-
-
         }
-
          outputhotel.setText(p);
          outputhotel.setTextFill(Paint.valueOf("Black"));
-
     }
 
     @FXML
@@ -204,16 +207,12 @@ void gohome3(MouseEvent event)throws Exception {
         String c1=destcity.getText();
         String pf="";
         for(int i=0;i<Program.getFlights().size();i++){
-
             if(c1.equals(Program.getFlights().get(i).getArriving_Airport())){
                 pf+=Program.getFlights().get(i).toString()+"\n";
             }
-
         }
-
         outputflight.setText(pf);
         outputflight.setTextFill(Paint.valueOf("Black"));
-
     }
     @FXML
     public void showCart(MouseEvent event){

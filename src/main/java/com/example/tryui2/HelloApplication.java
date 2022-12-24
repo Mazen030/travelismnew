@@ -34,6 +34,8 @@ public class HelloApplication extends Application {
 
         Tourist mazen=new Tourist("mazen","123");
         Program.addPerson(mazen);
+        Tourist welson=new Tourist("welson","123");
+        Program.addPerson(welson);
         Employee ahmed=new Employee("ahmed","123");
         Program.addPerson(ahmed);
         Tour_guide gamal=new Tour_guide("gamal","456");
